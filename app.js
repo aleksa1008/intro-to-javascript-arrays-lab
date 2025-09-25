@@ -36,22 +36,18 @@ nums.forEach(num=>{
 })
 console.log('Exercise 11 result:', odds);
 
-const fizz=[]
-const buzz=[]
-const fizzbuzz=[]
-nums.forEach(num=>{
-    (num%2 === 0)? fizz.push(num):" ";
-})
-nums.forEach(num=>{
-    (num%5 === 0)? buzz.push(num):" ";
-})
-nums.forEach(num=>{
-    (num%2 === 0 && num%5 === 0)? fizzbuzz.push(num):" ";
-})
+const fizz = []; 
+const buzz = []; 
+const fizzbuzz = []; 
+nums.forEach(n => {
+     if (n % 3 === 0) fizz.push(n); 
+     if (n % 5 === 0) buzz.push(n); 
+     if (n % 3 === 0 && n % 5 === 0) fizzbuzz.push(n); });
 console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
+console.log(' fizz:', fizz); 
+console.log(' buzz:', buzz); 
+console.log(' fizzbuzz:', fizzbuzz);
+
 
 const numArrays = [
 	[100, 5, 23],
